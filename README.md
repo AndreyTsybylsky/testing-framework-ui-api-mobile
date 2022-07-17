@@ -33,6 +33,11 @@ terminal/command prompt and run `mvn clean verify` to run the example tests usin
 You will need the [geckodriver][geckodriver] on your path if you are using 
 Firefox version 48 or above.
 
+### Fast running
+```
+mvn clean verify -D'test=SeleniumHQTest' -D'browser=chrome' -D'webdriver.chrome.driver=d:\chromedriver.exe' -D'threads=4'
+```
+
 ### Browsers
 
 You can provide the `-Dbrowser` argument to chose a browser to run the tests in.
